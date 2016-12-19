@@ -423,8 +423,8 @@ Type VulkanContext
 		applicationInfo.apiVersion = VK_MAKE_VERSION(1, 0, 30)
 		
 		' make an array of string pointers for the layers that we want to use
-		Local pLayerNames:Byte Ptr[1]
-		pLayerNames[0] = "VK_LAYER_LUNARG_standard_validation".ToCString()
+		Local pLayerNames:Byte Ptr[0]
+		'pLayerNames[0] = "VK_LAYER_LUNARG_standard_validation".ToCString()
 		
 		' make a contiguous array of string pointers to the extensions that we want to enable
 		Local pExtensionNames:Byte Ptr[2]
